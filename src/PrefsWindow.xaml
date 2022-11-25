@@ -5,123 +5,151 @@
         Title="RawInput Touchpad"
         Height="600" Width="720" ResizeMode="CanResize">
 
-    <ScrollViewer>
-        <StackPanel Background="White" MinWidth="300">
-
-            <GroupBox Margin="10,10,10,10" FontSize="12" FontWeight="Regular"
+	<ScrollViewer>
+		<StackPanel Background="White" MinWidth="300" Height="752">
+			<GroupBox Margin="10,10,10,10" FontSize="12" FontWeight="Regular"
                       Background="#EAEAEA" Padding="8">
-                <GroupBox.Header>
-                    <TextBlock TextWrapping="Wrap" FontSize="15" FontWeight="Bold">
-                        Touchpad status
-                    </TextBlock>
-                </GroupBox.Header>
-                <StackPanel>
+				<GroupBox.Header>
+					<TextBlock TextWrapping="Wrap" FontSize="15" FontWeight="Bold">
+						Touchpad status
+					</TextBlock>
+				</GroupBox.Header>
+				<StackPanel>
 
-                    <TextBlock>
-                        <Run Text="Precision touchpad exists:" />
-                        <Run FontWeight="Bold" Name="TouchpadExists" />
-                    </TextBlock>
-                    <TextBlock>
-                        <Run Text="Precision touchpad registered:" />
-                        <Run FontWeight="Bold" Name="TouchpadRegistered" />
-                    </TextBlock>
+					<TextBlock>
+						<Run Text="Precision touchpad exists:" />
+						<Run FontWeight="Bold" Name="TouchpadExists" />
+					</TextBlock>
+					<TextBlock>
+						<Run Text="Precision touchpad registered:" />
+						<Run FontWeight="Bold" Name="TouchpadRegistered" />
+					</TextBlock>
 
-                    <TextBlock Margin="0, 8, 0, 0" TextWrapping="Wrap">
-                        <Run FontStyle="Italic" Text="Contacts:" />
-                        <Run Text="{Binding ElementName=WindowRoot, Path=TouchpadContacts}" />
-                    </TextBlock>
+					<TextBlock Margin="0, 8, 0, 0" TextWrapping="Wrap">
+						<Run FontStyle="Italic" Text="Contacts:" />
+						<Run Text="{Binding ElementName=WindowRoot, Path=TouchpadContacts}" />
+					</TextBlock>
 
 
-                </StackPanel>
-            </GroupBox>
+				</StackPanel>
+			</GroupBox>
+			<GroupBox Height="123"  Background="#FFC8C8C8" Margin="10,10,10,10" Padding="8,8,8,8">
+				<GroupBox.Header>
+					<TextBlock TextWrapping="Wrap" FontSize="15" FontWeight="Bold">
+						Gesture Selection
+					</TextBlock>
+				</GroupBox.Header>
+				<StackPanel>
+					<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="658" Height="62">
+						<Run Text="Select drag gesture"/>
+						<LineBreak/>
+						<Run Text="Selected: tap three fingers on trackpad then lift one finger up and use the other finger to drag files, window, or select.For longer drag, keep two finger on the touchpad and drag with one finger with the other keep touch."/>
+						<LineBreak/>
+						<Run Text="Unselected: drag with three fingers like macos does."/>
+					</TextBlock>
+					<CheckBox Name="twotoone" Margin="0, 5">
+						<TextBlock
+                                   TextWrapping="Wrap" >
+							<Run Text="Three to one finger drag"/>
+						</TextBlock>
+					</CheckBox>
+				</StackPanel>
+			</GroupBox>
 
-            <GroupBox Margin="10,10,10,10" FontSize="12" FontWeight="Regular"
+			<GroupBox Margin="10,10,10,10" FontSize="12" FontWeight="Regular"
                       Background="#EAEAEA" Padding="8">
-                <GroupBox.Header>
-                    <TextBlock TextWrapping="Wrap" FontSize="15" FontWeight="Bold">
-                        Drag preferences
-                    </TextBlock>
-                </GroupBox.Header>
-                <StackPanel>
-                    <TextBlock TextWrapping="WrapWithOverflow">
-                        After releasing the three fingers, using only one or two fingers will release instantly the click, but if you hang on, the click will be released only after a short delay. This feature allows you to stop dragging for repositioning yours fingers on the touchpad, and then, restart the drag without releasing the click. This is useful for drag and drop operations on small touchpads. You can disable this feature here, or change the delay time.
-                    </TextBlock>
+				<GroupBox.Header>
+					<TextBlock TextWrapping="Wrap" FontSize="15" FontWeight="Bold">
+						Drag preferences(Activate in Three Finger Mode)
+					</TextBlock>
+				</GroupBox.Header>
+				<StackPanel>
+					<TextBlock TextWrapping="WrapWithOverflow">
+						After releasing the three fingers, using only one or two fingers will release instantly the click, but if you hang on, the click will be released only after a short delay. This feature allows you to stop dragging for repositioning yours fingers on the touchpad, and then, restart the drag without releasing the click. This is useful for drag and drop operations on small touchpads. You can disable this feature here, or change the delay time.
+					</TextBlock>
 
 
-                    <CheckBox Name="AllowReleaseAndRestart" Margin="0, 5">
-                        <TextBlock Text="Allow release fingers and restart drag without releasing click"
+					<CheckBox Name="AllowReleaseAndRestart" Margin="0, 5">
+						<TextBlock Text="Allow release fingers and restart drag without releasing click"
                                    TextWrapping="Wrap" />
-                    </CheckBox>
+					</CheckBox>
 
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock TextWrapping="Wrap">
-                            Delay before click release (ms):
-                        </TextBlock>
-                        <TextBox Name="ReleaseDelay" PreviewTextInput="NumberValidationTextBox"
+					<StackPanel Orientation="Horizontal">
+						<TextBlock TextWrapping="Wrap">
+							Delay before click release (ms):
+						</TextBlock>
+						<TextBox Name="ReleaseDelay" PreviewTextInput="NumberValidationTextBox"
                                  Width="50" Margin="5, 0, 0, 0" />
-                    </StackPanel>
+					</StackPanel>
 
-                </StackPanel>
-            </GroupBox>
+				</StackPanel>
+			</GroupBox>
 
-            <GroupBox Margin="10" FontSize="12" FontWeight="Regular"
+			<GroupBox Margin="10" FontSize="12" FontWeight="Regular"
                       Background="#EAEAEA" Padding="8">
-                <GroupBox.Header>
-                    <TextBlock TextWrapping="Wrap" FontSize="15" FontWeight="Bold">
-                        Cursor move
-                    </TextBlock>
-                </GroupBox.Header>
+				<GroupBox.Header>
+					<TextBlock TextWrapping="Wrap" FontSize="15" FontWeight="Bold">
+						Cursor move(Activate in Three Finger Mode)
+					</TextBlock>
+				</GroupBox.Header>
 
-                <StackPanel>
-                    <TextBlock TextWrapping="WrapWithOverflow">
-                        By default, moving three fingers on the touchpad does not move the mouse pointer. ThreeFingersDragOnWindows is simulating the cursor move manually. Therefore, moving the cursor with three fingers may behave a bit different than with only one finger. However, you can here change this behaviour.
-                    </TextBlock>
+				<StackPanel>
+					<TextBlock TextWrapping="WrapWithOverflow">
+						By default, moving three fingers on the touchpad does not move the mouse pointer. ThreeFingersDragOnWindows is simulating the cursor move manually. Therefore, moving the cursor with three fingers may behave a bit different than with only one finger. However, you can here change this behaviour.
+					</TextBlock>
 
 
-                    <CheckBox Name="ThreeFingersMove" Margin="0, 8">
-                        <TextBlock
+					<CheckBox Name="ThreeFingersMove" Margin="0, 8">
+						<TextBlock
                             Text="Enable three fingers mouse move (must be enabled unless you found a way to make windows move the pointer on three fingers drag)"
                             TextWrapping="Wrap" />
-                    </CheckBox>
+					</CheckBox>
 
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" /> <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" /> <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
 
-                        <TextBlock Grid.Row="0" Grid.Column="0">
-                            Mouse speed:
-                        </TextBlock>
-                        <Slider Grid.Row="0" Grid.Column="1" Name="MouseSpeed" Minimum="0.5" Maximum="200"
+						<TextBlock Grid.Row="0" Grid.Column="0">
+							Mouse speed:
+						</TextBlock>
+						<Slider Grid.Row="0" Grid.Column="1" Name="MouseSpeed" Minimum="0.5" Maximum="200"
                                 AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="2" Width="250" Margin="8, 0, 0, 0" />
 
-                        <TextBlock Grid.Row="1" Grid.Column="0">
-                            Mouse acceleration (default to 1, 0 to disable):
-                        </TextBlock>
-                        <Slider Grid.Row="1" Grid.Column="1" Name="MouseAcceleration" Minimum="0" Maximum="5"
+						<TextBlock Grid.Row="1" Grid.Column="0">
+							Mouse acceleration (default to 1, 0 to disable):
+						</TextBlock>
+						<Slider Grid.Row="1" Grid.Column="1" Name="MouseAcceleration" Minimum="0" Maximum="5"
                                 AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="2" Width="250" Margin="8, 0, 0, 0" />
-                    </Grid>
+					</Grid>
 
-                </StackPanel>
-            </GroupBox>
+				</StackPanel>
+			</GroupBox>
 
 
-            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+			<StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
 
-                <Button Padding="8,4"
+				<Button Padding="8,4"
                         Margin="10,10,0,10"
                         Content="Save and close"
                         Click="CloseButton_Click" />
 
-                <Button Padding="8,4"
+				<Button Padding="8,4"
                         Margin="10,10,10,10"
                         Content="Quit"
                         Click="QuitButton_Click" />
-            </StackPanel>
+			</StackPanel>
 
-        </StackPanel>
-    </ScrollViewer>
+
+
+
+
+
+		</StackPanel>
+	</ScrollViewer>
 </Window>

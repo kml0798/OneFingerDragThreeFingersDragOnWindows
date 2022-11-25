@@ -24,7 +24,7 @@ public partial class App {
     protected override void OnStartup(StartupEventArgs e){
         _notifyIcon.Icon = new Icon("Resources/icon.ico");
         _notifyIcon.Text = "ThreeFingersDragOnWindows";
-        _notifyIcon.Click += (_, _) => ShowPrefsWindow();
+        _notifyIcon.DoubleClick += (_, _) => ShowPrefsWindow();
 
         var button = new ToolStripButton("Quit");
         button.Click += (_, _) => Quit();
