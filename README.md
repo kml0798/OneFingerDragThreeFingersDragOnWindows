@@ -4,7 +4,7 @@
 
 # ThreeFingersDragOnWindows
 
-A windows app that allows the macos three fingers drag, using the Raw Inputs of precision touchpad.
+A windows app that allows one finger drag or the macos three fingers drag, using the Raw Inputs of precision touchpad.
 
 - [kamektx/TouchpadGestures_Advanced][1]
 - [mfakane/rawinput-sharp][2]
