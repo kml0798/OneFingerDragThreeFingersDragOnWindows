@@ -11,7 +11,7 @@ A windows app that allows one finger drag or the macos three fingers drag, using
 - [emoacht/RawInput.Touchpad][3]
 
 ## Preview
-![screenshot](https://raw.githubusercontent.com/ClementGre/ThreeFingersDragOnWindows/main/Resources/preview.png)
+![1669353513623](https://user-images.githubusercontent.com/108204013/203906588-7ba5f10c-200c-4a81-add4-fa73f8584460.jpg)
 
 ## Requirements
 
