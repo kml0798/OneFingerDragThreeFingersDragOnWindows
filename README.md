@@ -1,6 +1,6 @@
-[![Release](https://img.shields.io/github/v/release/clementgre/ThreeFingersDragOnWindows?label=Download%20version)](https://github.com/clementgre/ThreeFingersDragOnWindows/releases/latest)
-[![TotalDownloads](https://img.shields.io/github/downloads/clementgre/ThreeFingersDragOnWindows/total)](https://github.com/clementgre/ThreeFingersDragOnWindows/releases/latest)
-[![LatestDownloads](https://img.shields.io/github/downloads/clementgre/ThreeFingersDragOnWindows/latest/total)](https://github.com/clementgre/ThreeFingersDragOnWindows/releases/latest)
+[![Release](https://img.shields.io/github/v/release/kml0798/ThreeFingersDragOnWindows?label=Download%20version)](https://github.com/kml0798/ThreeFingersDragOnWindows/releases/latest)
+[![TotalDownloads](https://img.shields.io/github/downloads/kml0798/ThreeFingersDragOnWindows/total)](https://github.com/kml0798/ThreeFingersDragOnWindows/releases/latest)
+[![LatestDownloads](https://img.shields.io/github/downloads/kml0798/ThreeFingersDragOnWindows/latest/total)](https://github.com/kml0798/ThreeFingersDragOnWindows/releases/latest)
 
 # OneFingerDrag/ThreeFingersDragOnWindows
 
