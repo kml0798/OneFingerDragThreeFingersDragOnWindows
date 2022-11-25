@@ -3,8 +3,9 @@
 [![LatestDownloads](https://img.shields.io/github/downloads/kml0798/ThreeFingersDragOnWindows/latest/total)](https://github.com/kml0798/ThreeFingersDragOnWindows/releases/latest)
 
 # OneFingerDrag/ThreeFingersDragOnWindows
+Windows手势识别应用，支持三指转单指激活，单指拖拽功能（兼容windows默认手势）或Macos的三指拖动
 
-A windows app that allows one finger drag or the macos three fingers drag, using the Raw Inputs of precision touchpad.
+A windows app that allows one finger drag( Windows original gesture compatible) or the macos three fingers drag(windows threefingers' gesture need to be closed ), using the Raw Inputs of precision touchpad.
 
 - [kamektx/TouchpadGestures_Advanced][1]
 - [mfakane/rawinput-sharp][2]
