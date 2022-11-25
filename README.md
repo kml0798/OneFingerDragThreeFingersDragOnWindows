@@ -2,7 +2,7 @@
 [![TotalDownloads](https://img.shields.io/github/downloads/clementgre/ThreeFingersDragOnWindows/total)](https://github.com/clementgre/ThreeFingersDragOnWindows/releases/latest)
 [![LatestDownloads](https://img.shields.io/github/downloads/clementgre/ThreeFingersDragOnWindows/latest/total)](https://github.com/clementgre/ThreeFingersDragOnWindows/releases/latest)
 
-# ThreeFingersDragOnWindows
+# OneFingerDrag/ThreeFingersDragOnWindows
 
 A windows app that allows one finger drag or the macos three fingers drag, using the Raw Inputs of precision touchpad.
 
